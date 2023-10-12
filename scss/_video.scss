@@ -1,0 +1,22 @@
+.video {
+    background: $text-secondary;
+    &__container {
+        
+    }
+
+    &__body {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__play {
+        width: 126px;
+        height: 126px;
+        background: url(../source/play.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,40 @@
+@import '_reset';
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	font-size: 20px; 
+	color: $text-color;
+	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	a {
+		text-decoration: none;
+		color: $text-color;
+	}
+	li {
+		list-style: none;
+	}
+}
+
+// General Container
+._container {
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+@import '_home';
+@import '_video';
+@import '_gallery';
+@import '_content';
