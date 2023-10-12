@@ -1,0 +1,167 @@
+.footer {
+    background: $text-secondary;
+    &__container {
+    }
+
+    &__body {
+        padding-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        position: relative;
+    }
+
+    &__block {
+    }
+
+    &__logo {
+        width: 126.575px;
+        height: 105.64px;
+        background: url(../source/f-logo.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 100%;
+        line-height: 100%; /* 18px */
+        letter-spacing: -0.54px;
+        margin-bottom: 40px;
+    }
+
+    &__block-wrapper {
+        display: flex;
+    }
+
+    &__info {
+        margin-right: 60px;
+    }
+
+    &__info-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.54px;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__social {
+    }
+
+    &__social-heading {
+        font-size: 14.503px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.435px;
+        margin-bottom: 32px;
+    }
+
+    &__social-item-wrapper {
+        display: flex;
+    }
+
+    &__social-item {
+        width: 38.664px;
+        height: 38.675px;
+        margin-right: 16px;
+        &:nth-child(1) {
+            background: url(../source/whatsapp.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../source/telegram.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../source/yt.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url(../source/insta.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 0;
+        }
+    }
+
+    &__store-wrapper {
+        display: flex;
+        margin-bottom: 97px;
+        margin-top: 20px;
+    }
+
+    &__store {
+        width: 162px;
+        height: 48px;
+        &:nth-child(1) {
+            background: url(../source/appstore.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 15px;
+        }
+        &:nth-child(2) {
+            background: url(../source/googleplay.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__pay {
+    }
+
+    &__pay-heading {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: -0.54px;
+        margin-bottom: 40px;
+    }
+
+    &__pay-item-wrapper {
+        display: flex;
+    }
+    
+    &__pay-item {
+        width: 100px;
+        height: 64px;
+        margin-right: 10px;
+        cursor: pointer;
+        &:nth-child(1) {
+            background: url(../source/mir.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(../source/tinkoff.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(../source/yandex.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 0;
+        }
+    }
+
+    &__copyright {
+        width: 211px;
+        height: 30px;
+        background: url(../source/copyright.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+    }
+}
+
