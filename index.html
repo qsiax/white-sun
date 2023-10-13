@@ -19,10 +19,11 @@
         </div>
     </section>
     <section class="video">
-        <div class="video__container _container">
-            <div class="video__body">
-                <div class="video__play"></div>
-            </div>
+        <div class="video__body">
+            <div class="video__play hidden"></div>
+            <div class="video__pause hidden"></div>
+            <img class="video__sound-btn" src="source/sound.gif">
+            <video class="video" src="/source/video.webm#t=15" autoplay loop>
         </div>
     </section>
     <section class="gallery">
@@ -36,6 +37,8 @@
                         <div class="gallery__item swiper-slide"></div>
                     </div>
                 </div>
+                <div class="gallery__item-prev swiper-button-prev"></div>
+                <div class="gallery__item-next swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -92,5 +95,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/video.js"></script>
 </body>
 </html>
