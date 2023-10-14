@@ -122,6 +122,44 @@ body li {
   }
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.firts {
+  background: #FEF5A9;
+}
+
+.second {
+  left: 16.6%;
+  background: #FEF5A9;
+}
+
+.third {
+  left: 33.2%;
+  background: #FEF5A9;
+}
+
+.four {
+  left: 49.8%;
+  background: #FEF5A9;
+}
+
+.five {
+  left: 66.6%;
+  background: #FEF5A9;
+}
+
+.six {
+  left: 83.2%;
+  background: #FEF5A9;
+}
+
 .home {
   background: #607F9E;
 }
@@ -365,8 +403,8 @@ body li {
 }
 .footer__logo {
   width: 126.575px;
-  height: 105.64px;
-  background: url(../source/f-logo.svg);
+  height: 130.64px;
+  background: url(../source/f-logo.svg) center center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 20px;
