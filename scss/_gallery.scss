@@ -38,6 +38,11 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        &:nth-child(5) {
+            background: url(../source/5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     }
 
     // &__item-prev {

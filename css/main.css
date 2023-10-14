@@ -273,6 +273,11 @@ body li {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.gallery__item:nth-child(5) {
+  background: url(../source/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .gallery .swiper-button-next,
 .gallery .swiper-button-prev {
   right: 10px;
@@ -310,7 +315,7 @@ body li {
   margin-bottom: 40px;
 }
 .content__img:nth-child(1) {
-  background: url(../source/5.jpg) center center;
+  background: url(../source/6.jpg) center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
