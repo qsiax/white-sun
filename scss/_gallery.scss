@@ -19,27 +19,27 @@
         border-radius: 20px;
         background: $terial-color;
         &:nth-child(1) {
-            background: url(../source/1.jpg);
+            background: url(../source/1.jpg)  center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         &:nth-child(2) {
-            background: url(../source/2.jpg);
+            background: url(../source/2.jpg) center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         &:nth-child(3) {
-            background: url(../source/3.jpg);
+            background: url(../source/3.jpg) center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         &:nth-child(4) {
-            background: url(../source/4.jpg);
+            background: url(../source/4.jpg) center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
         &:nth-child(5) {
-            background: url(../source/5.jpg);
+            background: url(../source/5.jpg) center center;
             background-repeat: no-repeat;
             background-size: cover;
         }
