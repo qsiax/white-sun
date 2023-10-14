@@ -5,6 +5,9 @@
 
     &__body {
         padding-bottom: 140px;
+        @media (max-width: $m-point) {
+            padding-bottom: 60px;
+        }
     }
 
     &__img {
@@ -32,5 +35,9 @@
         font-weight: 5;
         line-height: normal;
         color: $main-color;
+        @media (max-width: $m-point) {
+            font-size: 28px;
+            margin-top: 40px;
+        }
     }
 }

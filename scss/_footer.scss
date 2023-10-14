@@ -8,9 +8,17 @@
         justify-content: space-between;
         margin-bottom: 60px;
         position: relative;
+        @media (max-width: $m-point) {
+            flex-direction: column;
+        }
     }
 
     &__block {
+        @media (max-width: $m-point) {
+            &:nth-child(1) {
+                margin-bottom: 40px;
+            }
+        }
     }
 
     &__logo {
