@@ -100,6 +100,12 @@
         </div>
     </section>
 
+    <div class="qr-btn"></div>
+
+    <div class="qr-wrapper hidden">
+        <div class="qr"></div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
     integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -107,5 +113,22 @@
     <script src="js/preloader.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/video.js"></script>
+    <script>
+        const qrWrapper = document.querySelector('.qr-wrapper')
+        const qrBtn = document.querySelector('.qr-btn')
+        const html = document.querySelector('html')
+
+        qrBtn.addEventListener('click', () => {
+            qrWrapper.classList.toggle('hidden')
+            qrBtn.classList.toggle('hidden')
+            html.classList.toggle('no-scroll')
+        })
+
+        qrWrapper.addEventListener('click', () => {
+            qrWrapper.classList.toggle('hidden')
+            qrBtn.classList.toggle('hidden')
+            html.classList.toggle('no-scroll')
+        })
+    </script>
 </body>
 </html>

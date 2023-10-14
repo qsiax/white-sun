@@ -9,6 +9,10 @@
 	scroll-behavior: smooth;
 }
 
+html.no-scroll {
+	overflow-y: hidden;
+}
+
 html,
 body {
 	font-size: 20px; 
@@ -74,6 +78,64 @@ body {
 .six {
 	left: 83.2%;
 	background: $primary-color-02;
+}
+
+.qr-wrapper {
+	position: fixed;
+	width: 30%;
+	height: 60%;
+	z-index: 9;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	transition: .3s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	&.hidden {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateX(-50%) translateY(-50%) scale(.8);
+	}
+	@media (max-width: $m-point) {
+		width: 80%;
+		height: 30%;
+	}
+}
+.qr {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../source/qr.png) center center;
+	background-repeat: no-repeat;
+	background-size: contain
+}
+
+.qr-btn {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	right: 2vw;
+	top: 2vw;
+	background: url(../source/qr.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 11;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: .3s ease;
+	&.hidden {
+		visibility: hidden;
+		opacity: 0;
+		transform: scale(.8);
+	}
+	@media (max-width: $m-point) {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 

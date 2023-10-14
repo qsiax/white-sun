@@ -89,6 +89,10 @@ meter {
   scroll-behavior: smooth;
 }
 
+html.no-scroll {
+  overflow-y: hidden;
+}
+
 html,
 body {
   font-size: 20px;
@@ -158,6 +162,83 @@ body li {
 .six {
   left: 83.2%;
   background: #FEF5A9;
+}
+
+.qr-wrapper {
+  position: fixed;
+  width: 30%;
+  height: 60%;
+  z-index: 9;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.qr-wrapper.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.8);
+      -ms-transform: translateX(-50%) translateY(-50%) scale(0.8);
+          transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+@media (max-width: 1000px) {
+  .qr-wrapper {
+    width: 80%;
+    height: 30%;
+  }
+}
+
+.qr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../source/qr.png) center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.qr-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 2vw;
+  top: 2vw;
+  background: url(../source/qr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 11;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.qr-btn.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+@media (max-width: 1000px) {
+  .qr-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .home {
